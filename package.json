@@ -1,0 +1,29 @@
+{
+    "name": "webdriverio_lession",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "wdio": "wdio run src/config/wdio.conf.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Darya-Lapitskaya/WebdriverIO_Lession.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Darya-Lapitskaya/WebdriverIO_Lession/issues"
+    },
+    "homepage": "https://github.com/Darya-Lapitskaya/WebdriverIO_Lession#readme",
+    "devDependencies": {
+        "@wdio/cli": "^7.16.9",
+        "@wdio/jasmine-framework": "^7.16.6",
+        "@wdio/local-runner": "^7.16.9",
+        "@wdio/spec-reporter": "^7.16.9",
+        "@wdio/sync": "^7.16.9",
+        "chromedriver": "^96.0.0",
+        "wdio-chromedriver-service": "^7.2.2"
+    }
+}
