@@ -6,8 +6,6 @@ class SearchPage extends Page {
     openUrl() {
         super.openUrl('https://webdriver.io/search/');
     }
-
 }
-
 
 module.exports = new SearchPage();

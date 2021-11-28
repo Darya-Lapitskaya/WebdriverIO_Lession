@@ -38,7 +38,7 @@ describe('Search tests', () => {
         page.header.searchBtn.click();
         expect(SearchModal.box).toBeDisplayed();
         SearchModal.searchField.addValue('Item123245678765432123456765432');
-        expect(SearchModal.noResultsPlaceholder.getText()).toContain('No results for ');
+        expect(SearchModal.noResultsPlaceholder.getText()).toContain('No results for');
     });
 
     it('should open search page via Url', () => {
@@ -47,7 +47,7 @@ describe('Search tests', () => {
         expect(ui.getUrl()).toContain('https://webdriver.io/search');
     })
 
-    it('should open search result item', () => {
+    it('should click search result item', () => {
         ui.openUrl('');
         let initialUrl = ui.getUrl();
         page.header.searchBtn.click();
