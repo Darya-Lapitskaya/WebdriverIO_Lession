@@ -1,11 +1,11 @@
 const Header = require('../controls/header');
 
-class Page  {
-header = new Header();
+class Page {
+    header = new Header();
 
-openUrl(path) {
-    browser.url(path);
-}
+    openUrl(path) {
+        browser.url(path);
+    }
 
 }
 

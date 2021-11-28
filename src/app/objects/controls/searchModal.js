@@ -11,15 +11,14 @@ class SearchModal extends BaseObject {
     get seeAllLinkHref() { return $('.DocSearch-Dropdown-Container').$('.DocSearch-HitsFooter').$('a').getAttribute('href'); }
     get seeAllLink() { return $('.DocSearch-Dropdown-Container').$('.DocSearch-HitsFooter').$('a'); }
     get noResultsPlaceholder() { return $('.DocSearch-Title'); }
-    get sectionsNumber() {return this.sections.lenght()};
-    get firstSearchResult(){return this.sections[0].$$('li')[0]};
-    
-    numberOfResultsPerSection(section){
+    get sectionsNumber() { return this.sections.lenght() };
+    get firstSearchResult() { return this.sections[0].$$('li')[0] };
+
+    numberOfResultsPerSection(section) {
         return section.$$('li').length;
     }
-    
+
 }
 
 
 module.exports = new SearchModal();
-// module.exports = SearchModal;

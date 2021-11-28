@@ -1,32 +1,31 @@
 const Page = require("./page");
 const Header = require('../controls/header');
 
-class HomePage extends Page{
+class HomePage extends Page {
     header = new Header();
-    constructor(){
+    constructor() {
         super();
     }
 
-    get getStartedBtn(){
+    get getStartedBtn() {
         return $$('.buttons_1r9m>a')[0];
     }
 
-    get watchTalksBtn(){
+    get watchTalksBtn() {
         return $$('.buttons_1r9m>a')[1];
     }
 
-    get readTheBookBtn(){
+    get readTheBookBtn() {
         return $$('.buttons_1r9m>a')[2];
     }
 
-    get takeTheCourseBtn(){
+    get takeTheCourseBtn() {
         return $$('.buttons_1r9m>a')[3];
     }
 
-    get supportBtn(){
+    get supportBtn() {
         return $$('.buttons_1r9m>a')[4];
     }
 
 }
 module.exports = new HomePage();
-//module.exports = HomePage;

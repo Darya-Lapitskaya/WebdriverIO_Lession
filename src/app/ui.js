@@ -3,7 +3,6 @@ const SearchModal = require("./objects/controls/searchModal");
 const Page = require("./objects/pages/page");
 const HomePage = require("./objects/pages/homePage");
 const header = require("./objects/controls/header");
-//const SearchPage = require("./objects/pages/searchPage");
 
 class Ui {
     page = new Page();

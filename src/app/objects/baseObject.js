@@ -9,7 +9,7 @@ class BaseObject {
         if (typeof textOrPosition === 'number') {
             this[elements][textOrPosition].click();
         } else {
-            this[elements].find((el)=>{
+            this[elements].find((el) => {
                 return el.getText().trim() === textOrPosition;
             }).click();
         }
@@ -21,7 +21,7 @@ class BaseObject {
         }
     }
 
-    getText(element){
+    getText(element) {
         return element.getText()
     }
 }
